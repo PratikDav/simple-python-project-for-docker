@@ -20,7 +20,7 @@ The idea wasn't to build something feature-rich — it was to have an app simple
 This is how I built the image, layer by layer:
 
 ```dockerfile
-FROM python:3.x-slim          # Base image — gives the container Python out of the box
+FROM python:3.12-slim          # Base image — gives the container Python out of the box
 WORKDIR /app                  # Sets the working directory inside the container
 COPY requirements.txt .       # Copies requirements.txt into the container
 RUN pip install -r requirements.txt   # Installs the dependencies
